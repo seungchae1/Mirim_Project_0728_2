@@ -22,7 +22,7 @@ public class ResultActivity extends AppCompatActivity {
 
         TextView[] tv= new TextView[imgName.length];
         int[] textId = {R.id.text01, R.id.text02, R.id.text03, R.id.text04, R.id.text05, R.id.text06,
-                    R.id.text06, R.id.text07, R.id.text08, R.id.text09};
+                R.id.text07, R.id.text08, R.id.text09};
         RatingBar[] rb = new RatingBar[voteCount.length];
         int[] rbId = {R.id.r1,R.id.r2,R.id.r3,R.id.r4, R.id.r5,R.id.r6,R.id.r7,R.id.r8,R.id.r9};
 
