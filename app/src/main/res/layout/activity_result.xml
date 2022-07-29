@@ -8,7 +8,28 @@
     android:stretchColumns="0"
     tools:context=".ResultActivity">
     <TableRow
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/max_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_span="2"
+            android:text="최다득표한 사진 이름 : "/>
+    </TableRow>
+    <TableRow
+        android:layout_marginBottom="5dp">
+        <ImageView
+            android:id="@+id/max_img"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:layout_span="2"
+            android:src="@drawable/bh"/>
+    </TableRow>
+    <TableRow
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text01"
             android:layout_width="match_parent"
@@ -25,7 +46,7 @@
 
     </TableRow>
     <TableRow
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text02"
             android:layout_width="match_parent"
@@ -42,7 +63,7 @@
 
     </TableRow>
     <TableRow
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text03"
             android:layout_width="match_parent"
@@ -59,7 +80,7 @@
 
     </TableRow>
     <TableRow
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text04"
             android:layout_width="match_parent"
@@ -76,7 +97,7 @@
 
     </TableRow>
     <TableRow
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text05"
             android:layout_width="match_parent"
@@ -93,7 +114,7 @@
 
     </TableRow>
     <TableRow
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text06"
             android:layout_width="match_parent"
@@ -110,7 +131,7 @@
 
     </TableRow>
     <TableRow
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text07"
             android:layout_width="match_parent"
@@ -127,7 +148,7 @@
 
     </TableRow>
     <TableRow
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text08"
             android:layout_width="match_parent"
@@ -144,7 +165,7 @@
 
     </TableRow>
     <TableRow
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text09"
             android:layout_width="match_parent"
@@ -161,7 +182,7 @@
 
     </TableRow>
     <TableRow
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="5dp">
         <Button
             android:id="@+id/btn_home"
             android:layout_width="match_parent"

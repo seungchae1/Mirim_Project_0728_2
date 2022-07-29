@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -18,6 +19,7 @@ public class ResultActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String[] imgName = intent.getStringArrayExtra("imgName");
         int[] voteCount = intent.getIntArrayExtra("voteCount");
+
         TextView[] tv= new TextView[imgName.length];
         int[] textId = {R.id.text01, R.id.text02, R.id.text03, R.id.text04, R.id.text05, R.id.text06,
                     R.id.text06, R.id.text07, R.id.text08, R.id.text09};
@@ -37,5 +39,17 @@ public class ResultActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        int[] imgId={R.drawable.bh,R.drawable.rudtn,R.drawable.ssh,R.drawable.sm,R.drawable.sh,
+                R.drawable.sb,R.drawable.duswns,R.drawable.tmdrhks,};
+
+        TextView maxText = findViewById(R.id.max_text);
+        ImageView maxImg = findViewById(R.id.max_img);
+        int maxIndex=0;
+        for(int i=1; i< imgId.length; i++){
+            if(voteCount[i]>voteCount[maxIndex]) maxIndex=i;
+        }
+        maxText.setText("최다득표한 사진 이름 : "+imgName[maxIndex]);
+        maxImg.setImageResource(imgId[maxIndex]);
     }
 }
